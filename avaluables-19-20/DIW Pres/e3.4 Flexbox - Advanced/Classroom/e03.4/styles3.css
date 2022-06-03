@@ -1,0 +1,67 @@
+ #main {
+     height: auto;
+     /********** ADD YOUR CODE HERE ***********/
+     /********** END OF YOUR CODE ***********/
+ }
+ 
+ #main>nav {
+     background: black;
+     padding: 5px;
+     ;
+     /********** ADD YOUR CODE HERE ***********/
+     /********** END OF YOUR CODE ***********/
+ }
+ 
+ #main>nav>div {
+     border: 1px solid white;
+     /********** ADD YOUR CODE HERE ***********/
+     /********** END OF YOUR CODE ***********/
+ }
+ 
+ #main>nav a {
+     color: azure;
+     text-decoration: none;
+     font-size: 1.2em;
+ }
+ 
+ #contents {
+     /********** ADD YOUR CODE HERE ***********/
+     /********** END OF YOUR CODE ***********/
+ }
+ 
+ #contents>article {
+     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+     /********** ADD YOUR CODE HERE ***********/
+     /********** END OF YOUR CODE ***********/
+ }
+ 
+ #contents>article img {
+     /********** ADD YOUR CODE HERE ***********/
+     /********** END OF YOUR CODE ***********/
+ }
+ 
+ #contents>article>.icons {
+     font-size: 0.8em;
+ }
+ /********** ADD YOUR CODE HERE ***********/
+ /* insert CSS to change order of the articles */
+ /********** END OF YOUR CODE ***********/
+ 
+ #main>aside {
+     background: lightgrey;
+     /********** ADD YOUR CODE HERE ***********/
+     /********** ADD YOUR CODE HERE ***********/
+     /********** END OF YOUR CODE ***********/
+ }
+ 
+ header,
+ footer {
+     background: grey;
+     height: 50px;
+ }
+ /********* RESPONSIVE **********/
+ 
+ @media screen and (max-width: 700px) {
+     /********** ADD YOUR CODE HERE ***********/
+     /********** END OF YOUR CODE ***********/
+ }

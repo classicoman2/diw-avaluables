@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MyTravelAgency Contact Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/0e71343c5a.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <i class="fa fa-envelope"></i>
+        <p>Leave a message</p>
+      </header>
+
+      <form action="action_page.php" autocomplete="off">
+        <!-- Selection -->
+        <fieldset id="selection">
+          <legend>Choose your form</legend>
+          <input type="radio" name="selection" value="option2" id="radio1" />
+          <label for="radio1">Before</label>
+          <input type="radio" name="selection" value="option2" id="radio2" />
+          <label for="radio2">After</label>
+        </fieldset>
+        <!-- Options-->
+        <select id="OptionSelect">
+          <option selected="selected" value=""
+            >[Choose one of the options...]</option
+          >
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+        </select>
+        <!-- Name -->
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <!-- Surname -->
+        <div class="input-group">
+          <label for="surname">Surname</label>
+          <input type="text" name="surname" id="surname" required />
+        </div>
+        <!-- Email -->
+        <div class="input-group">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <!-- Booking -->
+        <div class="input-group" id="booking-group">
+          <label for="booking">Booking Number</label>
+          <input
+            type="text"
+            name="booking"
+            id="booking"
+            pattern="[A-Z]{4}[0-9]{2}"
+            required
+          />
+        </div>
+        <!-- Telephone-->
+        <div class="input-group" id="telephone-group">
+          <label for="tel">Telephone</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="699-999999"
+            pattern="[0-9]{3}-[0-9]{6}"
+            required
+          />
+        </div>
+        <!-- Write your comment - textarea -->
+        <label for="comments" class="visuallyhidden">Write your comment</label>
+        <textarea
+          id="comments"
+          rows="4"
+          name="comments"
+          placeholder="Write your message..."
+          required
+        ></textarea>
+
+        <input type="submit" id="send" value="Send Form" />
+      </form>
+    </main>
+
+    <script>
+      //Before
+      document.getElementById("radio1").onclick = function() {
+        //Hide Dropdown
+        document.getElementById("OptionSelect").style.display = "flex";
+        //Hide Telephone
+        document.getElementById("telephone-group").style.display = "flex";
+        //Show Booking
+        document.getElementById("booking-group").style.display = "none";
+      };
+
+      //After
+      document.getElementById("radio2").onclick = function() {
+        //Hide Dropdown
+        document.getElementById("OptionSelect").style.display = "none";
+        //Hide Telephone
+        document.getElementById("telephone-group").style.display = "none";
+        //Show Booking
+        document.getElementById("booking-group").style.display = "flex";
+      };
+    </script>
+  </body>
+</html>

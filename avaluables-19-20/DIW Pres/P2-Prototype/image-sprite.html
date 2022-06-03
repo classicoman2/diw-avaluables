@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Sprite - Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url("sprites/pngkit_social-media-logos-png_7836.png");
+        }
+        
+        .sprite {
+            border: 1px solid black;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background-image: url("sprites/pngkit_social-media-logos-png_7836.png");
+            background-repeat: no-repeat;
+            background-size: 1050%;
+        }
+        
+        .fb {
+            background-position: 0 0;
+        }
+        
+        .tw {
+            background-position: -28px 0;
+        }
+        
+        .yt {
+            background-position: -28px -28px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a class="sprite fb" href="www.facebook.com"></a>
+        <a class="sprite tw" href="www.twitter.com"></a>
+        <a class="sprite yt" href="www.youtube.com"></a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+/** Variables **/
+/* STRUCTURE */
+body {
+  font-family: 'EB Garamond', serif !important;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.headerRow,
+.footerRow {
+  background-color: #58614e !important;
+}
+
+.theManes {
+  background-color: #eeeeee;
+}
+
+.why,
+.cards {
+  background-color: #e2e2e2;
+}
+
+.why img,
+.cards img {
+  width: 100%;
+}
+
+.contenidor .headerRow .nav {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+.contenidor .headerRow .nav a {
+  color: #b8c6ac;
+}
+
+.contenidor .headerRow .nav a:hover {
+  color: white !important;
+}
+
+.contenidor .headerRow .nav a.disabled {
+  color: #999baa;
+}
+
+.contenidor .headerRow .nav a.active {
+  color: #e9e9e9;
+}
+
+.contenidor .centralBlock {
+  max-height: 384px;
+  background-color: #e9e9e9;
+}
+
+.contenidor .centralBlock:first-child {
+  color: #4e5944;
+}
+
+.card {
+  background-color: #e2e2e2;
+  border: none;
+  max-width: 100%;
+}
+
+.card .btn {
+  background-color: #606060;
+  color: white;
+}
+
+.footerRow div {
+  color: #b8c6ac;
+}
+/*# sourceMappingURL=custom.css.map */

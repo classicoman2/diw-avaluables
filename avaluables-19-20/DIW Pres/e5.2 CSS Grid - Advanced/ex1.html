@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<title>A2.7 - Exercise 1- Creating a Responsive Grid</title>
+<style>
+
+body {
+  margin: 5px;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 2px;
+  padding: 20px;
+  font-size: 150%; 
+}
+
+.header, .footer {
+  background-color: #999;
+}
+
+.sidebar2 {
+  background-color: #ccc;
+  color: #444;
+}	
+
+.wrapper {
+	 	background-color: #fff;
+		color: #444;
+    display: grid;
+    grid-gap: 5px;
+	 
+    grid-template-areas:
+     "header"
+     "sidebar"
+     "content1"
+     "content2"
+     "footer";
+}	
+	
+.sidebar 	{ grid-area: sidebar; }
+.content1 { grid-area: content1; }
+.content2 { grid-area: content2; }
+.header 	{ grid-area: header;  }
+.footer 	{	grid-area: footer;  }
+
+	
+ /* CODI QUE HA D'AFEGIR L'ALUMNE */ 
+.header {
+	  position: relative;
+		padding-bottom:130px;
+}
+	
+.logo	{
+		width:auto;
+		height:auto;
+		margin:0;	
+	
+	  position:absolute;
+	  top:5px;;
+	  left:5px;
+}
+	
+.content1, .content2 {
+	  position:relative;
+	  height: 170px;
+}	
+	
+.img{
+	width:200px;
+	
+	position:absolute;
+}	
+	
+	.img1 { 
+		top:5px;
+		right:5px
+	}
+	.img2 {
+		bottom:5px;
+		left:5px;
+	}
+/* FINAL */
+	
+
+@media only screen and (min-width: 600px)   {
+		.wrapper {
+      grid-gap: 5px;
+			grid-template-columns: 200px 1fr;
+			grid-template-areas:
+      "header  header"
+			"sidebar content1"
+			"sidebar content2"
+			"footer  footer";
+		}
+
+}
+
+	
+
+    
+</style>
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		<div class="box header">
+			<img class="logo" src="logo-bn.png">
+		</div>
+		<div class="box sidebar">Sidebar</div>
+		<div class="box content1">
+			<img class="img img1" src="event-2.jpg">
+			Content 1
+			
+		</div>
+		<div class="box content2">
+			<img class="img img2" src="event-3.png">
+
+			Content 2
+			
+		</div>
+		<div class="box footer">Footer</div>
+	</div>
+
+</body>
+</html>

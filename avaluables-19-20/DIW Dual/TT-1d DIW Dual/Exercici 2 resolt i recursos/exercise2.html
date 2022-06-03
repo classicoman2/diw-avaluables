@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Exercise 1 - Flexbox - Examen DIW 2n Dual</title>
+    <style>
+        .container {
+            background-color: brown;
+            width: 600px;
+            height: 280px;
+            display: flex;
+        }
+        
+        .container div {
+            color: white;
+            background-color: grey;
+            font-size: 30px;
+            text-align: center;
+            padding: 40px;
+            margin: 2px;
+            width: 50px;
+        }
+        /********* ADD YOUR CODE FROM HERE **********/
+        
+        .container {
+            flex-direction: row-reverse;
+            align-items: flex-end;
+        }
+        
+        .container div:nth-child(1) {
+            flex-grow: 1;
+            align-self: flex-start;
+        }
+        
+        .container div:nth-child(2) {
+            flex-grow: 1;
+            order: 2;
+            align-self: center;
+        }
+        
+        .container div:nth-child(3) {
+            flex-grow: 1;
+            order: 2;
+        }
+        
+        .container div:nth-child(4) {
+            flex-shrink: 1;
+            align-self: stretch;
+        }
+        /********** END OF YOUR CODE ************/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+
+</html>
