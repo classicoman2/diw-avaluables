@@ -1,0 +1,96 @@
+:root {
+  font-family: "Readex Pro", sans-serif;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 260px 1fr auto 120px;
+  grid-template-areas:
+    "header header"
+    "main1 main2"
+    "cards-container cards-container"
+    "footer footer";
+  header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    color: black;
+    background-color: lightgrey;
+
+    margin-bottom: 20px;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      span {
+        margin: 0px 5px;
+        background-color: black;
+        color: white;
+        padding: 10px 15px;
+        &:hover {
+          color: lightgray;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .main1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cards-container {
+    grid-area: cards-container;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 20px;
+
+    .card {
+height: 400px;
+
+      display: flex;
+      flex-direction: column;   
+      justify-content: space-between  ; 
+      align-items: center;
+
+      margin: 5px 5px;
+      border: 1px solid grey;
+      img {
+        height: 200px;
+      }
+      .text {
+        font-size: 0.9rem;
+        text-align: center;
+      }
+    }
+  }
+
+  footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+
+    color: black;
+    background-color: lightgrey;
+
+    margin-top: 20px;
+
+    span {
+      padding: 40px 20px;
+      i {
+        font-size: 2rem;
+        margin: 0px 5px;
+      }
+    }
+  }
+}

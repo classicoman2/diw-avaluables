@@ -1,0 +1,78 @@
+:root {
+  font-family: "Readex Pro", sans-serif;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 260px 1fr auto 120px;
+  grid-template-areas: "header header" "main1 main2" "cards-container cards-container" "footer footer";
+}
+#wrapper header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: black;
+  background-color: lightgrey;
+  margin-bottom: 20px;
+}
+#wrapper header .logo {
+  display: flex;
+  justify-content: center;
+}
+#wrapper header nav {
+  display: flex;
+  justify-content: space-around;
+}
+#wrapper header nav span {
+  margin: 0px 5px;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+}
+#wrapper header nav span:hover {
+  color: lightgray;
+  cursor: pointer;
+}
+#wrapper .main1 {
+  display: flex;
+  justify-content: center;
+}
+#wrapper .cards-container {
+  grid-area: cards-container;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+#wrapper .cards-container .card {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 5px;
+  border: 1px solid grey;
+}
+#wrapper .cards-container .card img {
+  height: 200px;
+}
+#wrapper .cards-container .card .text {
+  font-size: 0.9rem;
+  text-align: center;
+}
+#wrapper footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  background-color: lightgrey;
+  margin-top: 20px;
+}
+#wrapper footer span {
+  padding: 40px 20px;
+}
+#wrapper footer span i {
+  font-size: 2rem;
+  margin: 0px 5px;
+}/*# sourceMappingURL=styles.css.map */

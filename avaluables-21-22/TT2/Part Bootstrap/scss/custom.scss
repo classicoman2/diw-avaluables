@@ -1,0 +1,35 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+$body-bg: #fcc91a;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// Then add additional custom code here
+
+.card {
+  background-color: green;
+}
+
+.card-body {
+  text-align: justify;
+}
+
+img#logo {
+  width: 500px;
+}
+
+.card > img {
+  width: 240px;
+}
+
+@media (max-width: 568px) {
+  .card > img {
+    width: 100%;
+  }
+  img#logo {
+    width: 200px;
+  }
+}
