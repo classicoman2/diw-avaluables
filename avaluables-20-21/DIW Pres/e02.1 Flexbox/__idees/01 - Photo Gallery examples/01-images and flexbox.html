@@ -1,0 +1,49 @@
+<!-- https://www.quackit.com/html/html_editors/scratchpad/?example=/css/flexbox/examples/inc_flexbox_photo_gallery_flex-direction_row 
+
+EXERCISE:
+Create a layout that when browser (Chrome) has inner width : 760px it's like this:
+
+<IMATGE>
+
+- Use the HTML file  xxxxxxx.html
+- You can't make changes on the HTML tags, only add classes to the tags that need it.
+- Use combinators in order to avoid using innecessary classes
+- Images must have width 150px
+
+
+-->
+
+<!doctype html>
+<title>Example</title>
+<style>
+  .cards {
+		background-color:blue;
+		
+		display: flex;
+    
+		flex-direction: row;
+		align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .cards img {
+    margin: 10px;
+    border: 3px solid #000;
+		
+		/*Fluid images*/
+    width: 150px;
+		
+		/* o també */
+/*		min-width:150px;*/
+  }
+</style>
+<main class="cards">
+  <img src="images/23m.jpg" alt="Sample photo">
+  <img src="images/24m.jpg" alt="Sample photo">
+  <img src="images/22m.jpg" alt="Sample photo">
+  <img src="images/28m.jpg" alt="Sample photo">
+  <img src="images/29m.jpg" alt="Sample photo">
+  <img src="images/30m.jpg" alt="Sample photo">
+  <img src="images/27m.jpg" alt="Sample photo">
+  <img src="images/32m.jpg" alt="Sample photo">
+  <img src="images/33m.jpg" alt="Sample photo">
+</main>

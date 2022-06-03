@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 3</title>
+
+    <style>
+      body {
+        margin: 5px;
+      }
+
+      .wrapper {
+        background-color: #fff;
+        color: #444;
+        /***** ADD YOUR CODE HERE *****/
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+
+        grid-template-areas: 
+          "a b  c"
+          "d d  c"
+          "d d  c"
+          "e e e";
+        /*****  END OF YOUR CODE  *****/
+      }
+
+      .box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+      }
+      
+      /***** ADD YOUR CODE HERE *****/
+
+      .a {
+        grid-area: a;
+      }
+
+
+      .b {
+        grid-area: b;
+      }
+
+      .c {
+        grid-area: c;
+      }
+
+      .d {
+        grid-area: d;
+      }
+
+      .e {
+        grid-area: e;
+      }
+
+      /*****  END OF YOUR CODE  *****/
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="box a">A</div>
+      <div class="box b">B</div>
+      <div class="box c">C</div>
+      <div class="box d">D</div>
+      <div class="box e">E</div>
+    </div>
+  </body>
+</html>
